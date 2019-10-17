@@ -21,3 +21,21 @@ _Properties -> Java Build Path -> Libraries tab -> Import External Jar -> Choose
 
 ### To run the application: ###
 
+
+Once the 2 folders are imported as Maven projects into Eclipse,
+
+1.  Go into the currency-exchange-service folder - src/main/java - expand all folders inside, and look for the CurrencyExchangeServiceApplication.java file. 
+
+Right click that -> Run As -> Java Application
+
+2. Go into the currency-conversion-service folder - src/main/java - expand all folders inside, and look for the CurrencyConversionServiceApplication.java file. 
+
+Right click that -> Run As -> Java Application.
+
+Accept any Windows Firewall prompts you get. Now the webservice should be up and running. 
+
+3. Open Postman. You'll need an account, but you can use your Google account to sign up.
+
+4. Now you can issue GET and POST requests. Below are some sample requests with some input that you can use:
+
+
