@@ -36,18 +36,18 @@ Once the 2 folders are imported as Maven projects into Eclipse
 
 4. Open Postman. You'll need an account, but you can use your Google account to sign up.
 
-5. Now you can issue GET and POST requests. The database of currency exchange values is already populated. Below are some sample requests with some input that you can use. To perform a currency conversion, Postman should already be set to GET requests (a GET button next to the request box)
+5. Now you can issue **GET** and **POST** requests. The database of currency exchange values is already populated. Below are some sample requests with some input that you can use. To perform a currency conversion, Postman should already be set to **GET** requests (a **GET** button next to the request box)
    * http://localhost:8100/currency-converter/from/USD/to/INR/quantity/900
    * http://localhost:8100/currency-converter/from/EUR/to/INR/quantity/45
    * http://localhost:8100/currency-converter/from/AUD/to/EUR/quantity/70
 
- These 3 examples should be enough for a demo
+   These 3 examples should be enough for a demo
 
 
-6. Now, you can make POST requests to save the user's input so far, as well as the output they received. This will get logged under "log_vX.json" file in the currency-conversion-service folder. To do this, Make sure Postman is set to POST (change the GET button to POST) and enter the following request:
+6. Now, you can make **POST** requests to save the user's input so far, as well as the output they received. This will get logged under "log_vX.json" file in the `currency-conversion-service folder`. To do this, Make sure Postman is set to **POST** (change the **GET** button to **POST**) and enter the following request:
    * http://localhost:8100/currency-converter/log-requests 
    
-  Now all the requests made so far, along with their output, are stored into the JSON file.
+   Now all the requests made so far, along with their output, are stored into the JSON file.
 
 #### Updating to version v1 ####
 
