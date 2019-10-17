@@ -44,7 +44,8 @@ Once the 2 folders are imported as Maven projects into Eclipse
    These 3 examples should be enough for a demo
 
 
-6. Now, you can make **POST** requests to save the user's input so far, as well as the output they received. This will get logged under "log_vX.json" file in the `currency-conversion-service folder`. To do this, Make sure Postman is set to **POST** (change the **GET** button to **POST**) and enter the following request:
+6. Now, you can make **POST** requests to save the user's input so far, as well as the output they received. This will get logged under "log_vX.json" file in the `currency-conversion-service` folder. 
+To do this, make sure Postman is set to **POST** (change the **GET** button to **POST**) and enter the following request:
    * http://localhost:8100/currency-converter/log-requests 
    
    Now all the requests made so far, along with their output, are stored into the JSON file.
