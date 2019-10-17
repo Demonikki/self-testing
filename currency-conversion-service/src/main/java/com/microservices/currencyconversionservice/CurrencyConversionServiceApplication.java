@@ -13,7 +13,7 @@ public class CurrencyConversionServiceApplication {
 													.getBean(CurrencyConversionController.class);
 		
 		//update currentVersion and run tests on reload
-		controller.currentVersion = 1;
+		controller.currentVersion = 0;
 		controller.regressionTest();
 		
 	}
