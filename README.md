@@ -36,7 +36,7 @@ Once the 2 folders are imported as Maven projects into Eclipse
 
 4. Open Postman. You'll need an account, but you can use your Google account to sign up.
 
-5. Now you can issue **GET** and **POST** requests. The database of currency exchange values is already populated. Below are some sample requests with some input that you can use. To perform a currency conversion, Postman should already be set to **GET** requests (a **GET** button next to the request box)
+5. Now you can issue **GET** and **POST** requests. The database of currency exchange values is already populated. Below are some sample requests with some input that you can use. To perform a currency conversion, Postman should already be set to **GET** requests (a **GET** button next to the request box). Enter the following lines into the text box and press **Send** (one at a time)
    * http://localhost:8100/currency-converter/from/USD/to/INR/quantity/900
    * http://localhost:8100/currency-converter/from/EUR/to/INR/quantity/45
    * http://localhost:8100/currency-converter/from/AUD/to/EUR/quantity/70
@@ -51,9 +51,10 @@ Once the 2 folders are imported as Maven projects into Eclipse
 
 #### Updating to version v1 ####
 
-There are 2 changes to make to move to version 1. We want to introduce a small logical bug in CurrencyConversionController.java, and update the version number in CurrencyConversionServiceApplication.java
+There are 2 changes to make to move to version 1. 
+We want to introduce a small logical bug in `CurrencyConversionController.java`, and update the version number in `CurrencyConversionServiceApplication.java`
 
-1. In `CurrencyConversionController.java`, comment out line 59 (under v0 code) and uncomment line 61 (under v1 code). This is the bug.
+1. In `CurrencyConversionController.java`, comment out line 59 (under `v0 code`) and un-comment line 61 (under `v1 code`). This is the bug.
 
 2. In `CurrencyConversionServiceApplication.java`, change line 16 to `controller.currentVersion = 1;`
 
