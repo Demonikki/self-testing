@@ -3,6 +3,7 @@
 ### Initial setup: ###
 
 1. [Download Eclipse](https://www.eclipse.org/downloads/)
+1.1 Install [Java](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) if it's not installed on your system.
 
 2. Download the project from [GitHub](https://github.com/Demonikki/self-testing) (click the Green "Clone or download" button on the right, and download as a ZIP)
  
