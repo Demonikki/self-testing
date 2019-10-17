@@ -22,22 +22,22 @@ _Properties -> Java Build Path -> Libraries tab -> Add External JARs -> Choose t
 
 Once the 2 folders are imported as Maven projects into Eclipse
 
-1 Go into the currency-exchange-service folder - src/main/java - expand all folders inside
- 1.1 Look for the CurrencyExchangeServiceApplication.java file. 
- 1.2 Right click that -> Run As -> Java Application
+1. Go into the currency-exchange-service folder - src/main/java - expand all folders inside
+  1. Look for the CurrencyExchangeServiceApplication.java file. 
+  2. Right click that -> Run As -> Java Application
 
 2. Go into the currency-conversion-service folder - src/main/java - expand all folders inside 
- 2.1 Look for the CurrencyConversionServiceApplication.java file. 
- 2.2 Right click that -> Run As -> Java Application.
+  1. Look for the CurrencyConversionServiceApplication.java file. 
+  2. Right click that -> Run As -> Java Application.
 
 3. Accept any Windows Firewall prompts you get. Now the webservice should be up and running. 
 
 4. Open Postman. You'll need an account, but you can use your Google account to sign up.
 
 5. Now you can issue GET and POST requests. The database of currency exchange values is already populated. Below are some sample requests with some input that you can use. To perform a currency conversion, Postman should already be set to GET requests (a GET button next to the request box)
-  a. http://localhost:8100/currency-converter/from/USD/to/INR/quantity/900
-  b. http://localhost:8100/currency-converter/from/EUR/to/INR/quantity/45
-  c. http://localhost:8100/currency-converter/from/AUD/to/EUR/quantity/70
+  1. http://localhost:8100/currency-converter/from/USD/to/INR/quantity/900
+  2. http://localhost:8100/currency-converter/from/EUR/to/INR/quantity/45
+  3. http://localhost:8100/currency-converter/from/AUD/to/EUR/quantity/70
 
  These 3 examples should be enough for a demo
 
