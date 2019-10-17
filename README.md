@@ -36,6 +36,14 @@ Accept any Windows Firewall prompts you get. Now the webservice should be up and
 
 3. Open Postman. You'll need an account, but you can use your Google account to sign up.
 
-4. Now you can issue GET and POST requests. Below are some sample requests with some input that you can use:
+4. Now you can issue GET and POST requests. The database of currency exchange values is already populated. Below are some sample requests with some input that you can use:
+
+To perform a currency conversion:
+
+
+
+
+
+
 
 
