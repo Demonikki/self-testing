@@ -21,6 +21,7 @@ _Properties -> Java Build Path -> Libraries tab -> Import External Jar -> Choose
 
 ### To run the application: ###
 
+#### Current version: v0 ####
 
 Once the 2 folders are imported as Maven projects into Eclipse,
 
@@ -38,11 +39,33 @@ Accept any Windows Firewall prompts you get. Now the webservice should be up and
 
 4. Now you can issue GET and POST requests. The database of currency exchange values is already populated. Below are some sample requests with some input that you can use:
 
-To perform a currency conversion:
+To perform a currency conversion, Postman should already be set to GET requests (a GET button next to the request box)
 
 
+a. http://localhost:8100/currency-converter/from/USD/to/INR/quantity/900
+
+b. http://localhost:8100/currency-converter/from/EUR/to/INR/quantity/45
+
+c. http://localhost:8100/currency-converter/from/AUD/to/EUR/quantity/70
+
+These 3 examples should be enough for a demo
 
 
+4. Now, you can make POST requests to save the user's input so far, as well as the output they received. This will get logged under "log_vX.json" file in the currency-conversion-service folder. To do this, Make sure Postman is set to POST (change the GET button to POST) and enter the following request:
+
+http://localhost:8100/currency-converter/log-requests 
+
+Now all the requests made so far, along with their output, are stored into the JSON file.
+
+#### Updating to version v1 ####
+
+There are 2 changes to make to move to version 1. We want to introduce a small logical bug in CurrencyConversionController.java, and update the version number in CurrencyConversionServiceApplication.java
+
+1. In CurrencyConversionController.java, comment out line 59 (under v0 code) and uncomment line 61 (under v1 code). This is the bug.
+
+2. In CurrencyConversionServiceApplication.java, change line 16 to controller.currentVersion = 1; 
+
+Save both files. The program should automatically reload and run the previous input/output against the current version, and report on any discrepancies.
 
 
 
